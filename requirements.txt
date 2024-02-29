@@ -1,0 +1,2 @@
+deta
+streamlit-option-menu
