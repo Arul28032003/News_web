@@ -18,17 +18,19 @@ def display_news(news):
 
     st.markdown("---")
 
+#Data fetch from data base using key
 DETA_KEY = st.secrets["data_key"]
 deta = Deta(DETA_KEY)
 db = deta.Base("Workshop")
+#Header area
 st.caption("👆👈 Click the arrow at the top-left corner to select a category.")
 st.title("⇝ TrendSpoter 📰✉️🚀")
 st.header("Search 🧐 ")
-
+#Search bar
 select = st.text_input("", placeholder="Enter your search term here ")
 st.write("")  
 
-col1, col2, col3 = st.columns([2, 1, 1])
+col1, col2, col3 = st.columns([2, 1, 1]) #button align 
 with col2:
     submit = st.button("Search 🔍", key="search_button")
 
@@ -85,7 +87,7 @@ if selected_option:
         res = db.fetch(query={"category?contains": "entertainment"})
     elif selected_option == "Technology":
         res = db.fetch(query={"category?contains": "technology"})
-
+    #function calling
     if res:
         data = res.items
         for news in data:
