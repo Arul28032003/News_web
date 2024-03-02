@@ -53,7 +53,7 @@ with st.sidebar:
     st.header("Select category")
     selected_option = option_menu(
         menu_title=None,
-        options=["Latest", "Business", "Sports", "South", "Science", "Crime", "Global", "Political", "Food", "Music", "Entertainment", "Technology"],
+        options=["Latest", "Business 📊", "Sports", "South", "Science", "Crime", "Global", "Political", "Food", "Music", "Entertainment", "Technology"],
         default_index=0,
         menu_icon="cast",
         orientation="vertical",
