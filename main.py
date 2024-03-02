@@ -21,16 +21,17 @@ def display_news(news):
 DETA_KEY = st.secrets["data_key"]
 deta = Deta(DETA_KEY)
 db = deta.Base("Workshop")
-st.caption("Click the arrow at the top-left corner to select a category.")
+st.caption("👆 Click the arrow at the top-left corner to select a category.")
+st.title("📰✉️🚀")
 st.title("TrendSpoter")
-st.header("Search")
+st.header("Search 🧐 ")
 
-select = st.text_input("", placeholder="Enter your search term here")
+select = st.text_input("", placeholder="Enter your search term here ")
 st.write("")  
 
 col1, col2, col3 = st.columns([2, 1, 1])
 with col2:
-    submit = st.button("Search", key="search_button")
+    submit = st.button("Search 🔍", key="search_button")
 
 if submit:
     # Ensure the search term is not empty
@@ -40,7 +41,7 @@ if submit:
         data = res.items
 
         if not data:
-            st.write("No news found matching the search term.")
+            st.write("No news found matching the search term 😕.")
         else:
             # Display the news that match the search term
             for news in data:
