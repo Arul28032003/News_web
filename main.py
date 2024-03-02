@@ -10,6 +10,7 @@ def display_news(news):
     with st.container():
         left, right = st.columns(2)
         with left:
+            col1, col2, col3 = st.columns([2, 1, 1])
             st.image(news["images"])
         with right:
             st.write(news["news"])
