@@ -49,7 +49,7 @@ if submit:
                 display_news(news)
     else:
         st.write("Please enter a search term.")
-    st.markdown("---")
+st.markdown("---")
 
 # Sidebar menu options
 with st.sidebar:
