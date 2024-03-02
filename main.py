@@ -65,7 +65,7 @@ with st.sidebar:
 if selected_option:
     if selected_option == "Latest":
         res = db.fetch(query={"category?contains": "latest"})
-    elif selected_option == "Business":
+    elif selected_option == "Business 📊":
         res = db.fetch(query={"category?contains": "business"})
     elif selected_option == "Sports":
         res = db.fetch(query={"category?contains": "Sports"})
