@@ -21,9 +21,8 @@ def display_news(news):
 DETA_KEY = st.secrets["data_key"]
 deta = Deta(DETA_KEY)
 db = deta.Base("Workshop")
-st.caption("👆 Click the arrow at the top-left corner to select a category.")
-st.title("📰✉️🚀")
-st.title("TrendSpoter")
+st.caption("👆👈 Click the arrow at the top-left corner to select a category.")
+st.title("TrendSpoter 📰✉️🚀")
 st.header("Search 🧐 ")
 
 select = st.text_input("", placeholder="Enter your search term here ")
