@@ -38,7 +38,7 @@ if submit:
     # Ensure the search term is not empty
     if select.strip():
         # Query the database for news containing the search term
-        res = db.fetch(query={"date?contains": select})
+        res = db.fetch(query={"news?contains": select})
         data = res.items
 
         if not data:
