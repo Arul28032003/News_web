@@ -77,9 +77,9 @@ if selected_option:
     elif selected_option == "Crime":
         res = db.fetch(query={"Category?contains": "crime"})
     elif selected_option == "Global":
-        res = db.fetch(query={"Discription?contains": "global"})
+        res = db.fetch(query={"Category?contains": "global"})
     elif selected_option == "Political":
-        res = db.fetch(query={"Discription?contains": "political"})
+        res = db.fetch(query={"Category?contains": "political"})
     elif selected_option == "Food":
         res = db.fetch(query={"Category?contains": "food"})
     elif selected_option == "Music":
