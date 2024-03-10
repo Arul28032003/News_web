@@ -10,11 +10,11 @@ def display_news(news):
     with st.container():
         left, right = st.columns(2)
         with left:
-            st.image(Discription["Images"])
+            st.image(Discription["Image"])
         with right:
             st.write(Discription["Discription"])
-            authors = Discription.get("Authors", "Unknown")
-            st.write(f" By - {Authors}")
+            authors = Discription.get("Author", "Unknown")
+            st.write(f" By - {Author}")
 
     st.markdown("---")
 
