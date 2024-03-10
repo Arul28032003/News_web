@@ -24,8 +24,8 @@ deta = Deta(DETA_KEY)
 db = deta.Base("data")
 #Header area
 st.caption("👆👈 Click the arrow at the top-left corner to select a category.")
-st.title("⇝ TrendSpoter 📰✉️🚀")
-st.header("Search 🧐 ")
+st.title("⇝ TrendSpoter 📰🚀")
+st.header("Search")
 #Search bar
 select = st.text_input("", placeholder="Enter your search term here ")
 st.write("")  
