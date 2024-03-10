@@ -38,7 +38,7 @@ if submit:
     # Ensure the search term is not empty
     if select.strip():
         # Query the database for news containing the search term
-        res = db.fetch(query={"news?contains": select})
+        res = db.fetch(query={"news?discription": select})
         data = res.items
 
         if not data:
@@ -65,29 +65,29 @@ with st.sidebar:
 # Fetch and display news based on the selected category
 if selected_option:
     if selected_option == "Latest":
-        res = db.fetch(query={"category?contains": "latest"})
+        res = db.fetch(query={"category?discription": "latest"})
     elif selected_option == "Business 📊":
-        res = db.fetch(query={"category?contains": "business"})
+        res = db.fetch(query={"category?discription": "business"})
     elif selected_option == "Sports":
-        res = db.fetch(query={"category?contains": "Sports"})
+        res = db.fetch(query={"category?discription": "Sports"})
     elif selected_option == "South":
-        res = db.fetch(query={"category?contains": "south"})
+        res = db.fetch(query={"category?discription": "south"})
     elif selected_option == "Science":
-        res = db.fetch(query={"category?contains": "science"})
+        res = db.fetch(query={"category?discription": "science"})
     elif selected_option == "Crime":
-        res = db.fetch(query={"category?contains": "crime"})
+        res = db.fetch(query={"category?discription": "crime"})
     elif selected_option == "Global":
-        res = db.fetch(query={"news?contains": "global"})
+        res = db.fetch(query={"news?discription": "global"})
     elif selected_option == "Political":
-        res = db.fetch(query={"news?contains": "political"})
+        res = db.fetch(query={"news?discription": "political"})
     elif selected_option == "Food":
         res = db.fetch(query={"category?contains": "food"})
     elif selected_option == "Music":
-        res = db.fetch(query={"category?contains": "music"})
+        res = db.fetch(query={"category?discription": "music"})
     elif selected_option == "Entertainment":
-        res = db.fetch(query={"category?contains": "entertainment"})
+        res = db.fetch(query={"category?discription": "entertainment"})
     elif selected_option == "Technology":
-        res = db.fetch(query={"category?contains": "technology"})
+        res = db.fetch(query={"category?discription": "technology"})
     #function calling
     if res:
         data = res.items
