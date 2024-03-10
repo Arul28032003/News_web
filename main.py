@@ -88,7 +88,7 @@ if selected_option:
         res = db.fetch(query={"Category?contains": "entertainment"})
     elif selected_option == "Technology":
         res = db.fetch(query={"Category?contains": "technology"})
-     elif selected_option == "Life style":
+    elif selected_option == "Life style":
         res = db.fetch(query={"Category?contains": "life-style"})
     #function calling
     if res:
