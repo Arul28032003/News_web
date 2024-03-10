@@ -2,7 +2,7 @@ from deta import Deta
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-def display_news(news):
+def display_news(Discription):
     st.write(Discription["Date"])
     st.write(Discription["Country"])
     st.header(Discription["Headlines"])
