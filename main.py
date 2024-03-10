@@ -21,7 +21,7 @@ def display_news(news):
 #Data fetch from data base using key
 DETA_KEY = st.secrets["data_key"]
 deta = Deta(DETA_KEY)
-db = deta.Base("data")
+db = deta.Base("Workshop")
 #Header area
 st.caption("👆👈 Click the arrow at the top-left corner to select a category.")
 st.title("⇝ TrendSpoter 📰✉️🚀")
