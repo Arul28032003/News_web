@@ -20,7 +20,7 @@ def display_news(news):
 
 DETA_KEY = st.secrets["data_key"]
 deta = Deta(DETA_KEY)
-db = deta.Base("news")
+db = deta.Base("Workshop")
 
 st.caption("Click the arrow at the top-left corner to select a category.")
 st.title("TrendSpoter")
