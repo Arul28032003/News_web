@@ -18,7 +18,7 @@ def display_news(news):
 
     st.markdown("---")
 
-DETA_KEY = "dGAPJHJhu_jSQ57BDygnED8L2HmM8GXHg52Apdwf8X"
+DETA_KEY = st.secrets["data_key"]
 deta = Deta(DETA_KEY)
 db = deta.Base("news")
 
