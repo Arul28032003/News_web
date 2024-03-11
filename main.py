@@ -94,4 +94,4 @@ if selected_option:
     if res:
         data = res.items
         for news in data:
-            display_news(news)
+            display_news(Discription)
