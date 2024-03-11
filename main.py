@@ -22,8 +22,8 @@ DETA_KEY = st.secrets["data_key"]
 deta = Deta(DETA_KEY)
 db = deta.Base("data")
 
-st.caption("Click the arrow at the top-left corner to select a category.")
-st.title("TrendSpoter")
+st.caption("👆👈 Click the arrow at the top-left corner to select a category.")
+st.title("TrendSpoter 🚀📰")
 st.header("Search")
 
 select = st.text_input("", placeholder="Enter your search term here")
@@ -31,7 +31,7 @@ st.write("")
 
 col1, col2, col3 = st.columns([2, 1, 1])
 with col2:
-    submit = st.button("Search", key="search_button")
+    submit = st.button("Search 🔍", key="search_button")
 
 if submit:
     res = db.fetch(query={"Discription?contains": select})
