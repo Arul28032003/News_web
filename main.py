@@ -51,7 +51,7 @@ with st.sidebar:
     )
 
 if selected_option == "Latest":
-    res = db.fetch(query={"Catogary?contains": "latest"})
+    res = db.fetch(query={"Discription?contains": "latest"})
 elif selected_option == "Technology":
     res = db.fetch(query={"Catogary?contains": "technology"})
 elif selected_option == "Business":
